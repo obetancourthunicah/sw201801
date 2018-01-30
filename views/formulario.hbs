@@ -1,0 +1,25 @@
+<form action="formulario" method="post">
+   <div>
+     Observen que la accion es igual
+     como en php solo que formulario
+     no tiene la extensión php solo
+     el nombre de la uri, mas adelante
+     veremos que esto es muy conveniente.
+   </div>
+   <label>Nmobre Completo</label>
+   <input type="text" name="txtNombre"
+    value="{{txtNombre}}" placeholder="Nombre Completo" />
+    <br/>
+    <label>Género</label><br/>
+    <input type="radio" value="M"
+      name="genMasculino" {{Mchecked}} />
+      Masculino
+      <input type="radio" value="F"
+        name="genMasculino" {{Fchecked}} />
+        Femenino
+        <br/>
+        <input type="submit" value="Enviar Formulario" />
+</form>
+<div>
+    {{resultado}}
+</div>
