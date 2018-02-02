@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Orlando' });
@@ -71,5 +72,37 @@ router.post('/formulario', function(req,res,next){
   res.render('formulario', datos);
 
 });
+
+
+
+/// -----------------------------------------
+var personasModel = require("../models/personas.js");
+router.get('/personas', function(req,res,next){
+  res.render('personas', {"personas":personasModel.getPersonas()});
+});//get personas/
+
+router.get('/personas_masculino', function(req,res,next){
+  res.render('personas', {"personas":personasModel.getPersonasByGenero("M")});
+});//get personas/
+
+router.get('/personas_femenino', function(req,res,next){
+  res.render('personas', {"personas":personasModel.getPersonasByGenero("F")});
+});//get personas/
+
+router.get('/personas/json', function(req,res,next){
+  //res.render('personas', {"personas":personasModel.getPersonas()});
+  res.json(personasModel.getPersonas());
+});//get personas/
+
+// get consultas
+// post agregar nuevos datos
+// put modificar datos existentes
+// delete eliminar datos existentes
+
+router.post('/personas/new', function(req,res,next){
+  var nombre = req.body.nombre;
+  var genero = req.body.genero;
+  res.json(personasModel.addPersona(nombre, genero));
+});//personas/new
 
 module.exports = router;

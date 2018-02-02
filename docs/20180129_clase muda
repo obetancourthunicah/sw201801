@@ -1,0 +1,38 @@
+El tema de hoy es algo
+corto. Vamos a realizar un
+formulario sencillo y
+manejar la data ingresada en el
+formulario para eso vamos a:
+
+Crear la plantilla del formulario
+en la carpeta views llamada
+formulario.hbs
+
+El formulario no tiene gran cosa pero
+necesitamos declarar las rutas para
+poder utilizar esta plantilla
+esa la agregamos (seran dos) en
+la caperta routes en el archivo
+index.js
+
+Bueno hay tarea
+Creence un formulario que capture los datos
+generales de una persona para registrar
+un ticket de avion
+
+nombre
+identidad
+edad
+vuelo de Teg a SPSP
+o vuelvo de SPSP a Teg
+o vuelo de Teg a LaCeiba
+o vuelo de La Ceiba a Teg
+y los diás que estará fuera.
+
+calcular la tarifa y mostrar el ticket
+la tarifa se calcula
+si es de teg a spsp o vice 1500 X día
+si es de teg a la ceiba o vice 2000 x dia
+
+buenas noches. En moodle les pondre el enlace
+al repositorio con este ejemplo.
