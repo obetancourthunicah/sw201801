@@ -1,0 +1,45 @@
+contabilidad basica
+1000 clientes su sistema de contabilidad
+MSSQL2015  .net C#
+Extedible Markup Language XML
+
+SOAP2  discovery | method
+https://soap.studentsinfo.com/campussj?wsdl
+<personas>
+  <persona>
+    <nombre>Orlando j Betancourth</nombre>
+    <edad>Ti4</edad>
+  </persona>
+  <persona>
+    <nombre>Fulano de Tal</nombre>
+    <edad>Ti5</edad>
+  </persona>
+</personas>
+
+
+SAP R3 SINAFI
+ORACLE qt java
+
+
+JSON -- Javascript Object Notation
+
+{
+  "nombre":"Orlando",
+  "apellido":"Betancourth",
+  "notas":[
+      {"fecha":0000002348239, "nota":"Lero Lero Candelero"},
+      {"fecha":00000023123412339, "nota":"Lero Lero Candelero 2"},
+  ],
+  "colores":["rojo","azul","verder"],
+  "direccion":{"calle":"La Calle",
+              "Casa":"en algun lugar",
+              "telefono":"jajajaj"}
+}
+
+// ajax REST API , Base De Datos Documentales, Diccionarios,
+// Analizadores de Big Data,
+
+
+
+SAR
+Firebase DETLIVE BD Documentales Declaraciones

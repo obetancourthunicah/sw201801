@@ -1,0 +1,16 @@
+<h1>Esto es un ejemplo 2</h1>
+<form action="/ejemplo2" method="post">
+  <input type="text" name="txtNombre" id="txtNombre"
+  value="{{txtNombre}}" />
+  <input type="submit" value="Enviar" name="btnSubmit" />
+</form>
+{{#if txtNombre}}
+  <div>
+    <b>Datos ingresado es : {{txtNombre}}</b>
+  </div>
+{{/if}}
+<ul>
+{{#each history}}
+    <li>{{this}}</li>
+{{/each}}
+</ul>

@@ -22,6 +22,21 @@ router.get('/ruta', function(req,res,next){
               });
 });
 
+// var ejemplo2_handler = function(req,res,next){
+//   res.render("ejemplo2",{});
+// }
+//
+// router.get('/ejemplo2', ejemplo2_handler); // end get
+var nombres = [];
+router.get('/ejemplo2', function(req,res,next){
+  res.render("ejemplo2",{"history":nombres});
+}); //end get
+
+router.post('/ejemplo2', function(req,res,next){
+  nombres.push(req.body.txtNombre);
+  res.render("ejemplo2",{"txtNombre":req.body.txtNombre, "history":nombres});
+});
+
 //aqui crearemos las dos rutas
 // son dos ya que a diferencia de php o otros
 // lenguages de server side scripting
