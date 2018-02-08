@@ -1,0 +1,20 @@
+<section class="header">
+    <h1>Información de Album de Datos</h1>
+</section>
+<section class="filters">
+  <div class="albumfilter">
+    <select id="alumbcod">
+      {{#each albums}}
+        <option value="{{this}}">
+          Album No. {{this}}
+        </option>
+      {{/each}}
+    </select>
+  </div>
+</section>
+<pre class="albumholder" id="albumholder">
+
+</pre>
+
+
+<script src="/javascripts/client.js"></script>

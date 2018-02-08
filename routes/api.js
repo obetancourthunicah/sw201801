@@ -1,6 +1,6 @@
 var express= require('express');
 var router = express.Router();
-
+var albums = require('../models/albumdata.json');
 /*
 
   /sumar -- post
@@ -46,5 +46,12 @@ router.get('/historico/:usuario', function(req,res,next){
     });
     res.json(operacionesFiltradas);
 }); //historial/usuario
+
+router.get('/album/:albumid', function(req,res,next){
+  var albumData = albums.filter(function(o, i){
+    return (o.albumId == parseInt(req.params.albumid));
+  });
+  res.json(albumData);
+});
 
 module.exports = router;

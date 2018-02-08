@@ -120,4 +120,14 @@ router.post('/personas/new', function(req,res,next){
   res.json(personasModel.addPersona(nombre, genero));
 });//personas/new
 
+
+router.get('/albums', function(req,res,next){
+  var data = {};
+  data.albums = [];
+  for(var i = 1 ; i<=100 ; i++){
+    data.albums.push(i);
+  }
+  res.render('albums', data);
+});
+
 module.exports = router;
